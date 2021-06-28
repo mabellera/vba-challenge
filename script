@@ -1,0 +1,48 @@
+Sub Button1_Click()
+
+    Dim ticker As String
+
+Dim Stick_Total As Double
+ Stock_Total = 0
+
+  Dim Summary_Table_Row As Integer
+  Summary_Table_Row = 2
+  
+  
+
+  For i = 2 To 705714
+
+    If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
+
+      ticker = Cells(i, 1).Value
+
+      Stock_Total = Stock_Total + Cells(i, 7).Value
+      
+        yearly_summary = Cells(i, 3).Value - Cells(i, 6).Value
+    
+
+      Range("I" & Summary_Table_Row).Value = ticker
+
+      Range("J" & Summary_Table_Row).Value = Stock_Total
+      
+       Range("K" & Summary_Table_Row).Value = yearly_summary
+    
+      
+
+      Summary_Table_Row = Summary_Table_Row + 1
+      
+     Stock_Total = 0
+
+    Else
+
+      Stock_Total = Stock_Total + Cells(i, 7).Value
+      
+      
+
+    End If
+    
+    
+
+  Next i
+
+End Sub
