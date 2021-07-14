@@ -1,4 +1,3 @@
 # vba-challenge
 
-I was able to summarize the ticker and the stock volume but I wasn't able to figure out how to calculate the yearly summary and percentage after the cells were already summarized.
-I will love the opportunity to resubmit with this new part. I will meet with my tutor this week. Let me know if that's a possibility please.
+I was able to complete it on my 2nd attempt. New files have the workd "take2" for reference.
